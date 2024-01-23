@@ -18,7 +18,7 @@ for query in queires:
            
             api_url = 'https://api.api-ninjas.com/v1/sentiment?text={}'.format(text)
             try:
-                response = requests.get(api_url, headers={'X-Api-Key': 'ntIoZJEEGOoyl7acMjSOWw==okm6h0OFxx4NaICp'})
+                response = requests.get(api_url, headers={'X-Api-Key': 'api-key'})
                 response.raise_for_status()  
 
                 data = response.json()
