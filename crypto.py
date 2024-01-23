@@ -1,7 +1,7 @@
 from newsapi import NewsApiClient
 import requests
 
-api_key = "fa1b664ab4a8489d9a6228db4fe0f06a"
+api_key = "api-key"
 newsapi = NewsApiClient(api_key=api_key)
 queires = ["bitcoin", "ethereum", "dogecoin", "cryptocurrency"]
 for query in queires:  
@@ -12,7 +12,7 @@ for query in queires:
         try:
             text = article["content"]
         except AttributeError:
-            print("AttributeError: 'NoneType' object has no attribute 'content' (line 37)")
+            print("AttributeError: 'NoneType' object has no attribute 'content'")
         
         if text:
            

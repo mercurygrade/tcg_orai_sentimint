@@ -3,7 +3,7 @@ import { request } from "https://deno.land/x/request/mod.ts";
 
 const s = serve({ port: 8080 });
 
-const api_key = "fa1b664ab4a8489d9a6228db4fe0f06a";
+const api_key = "api-key";
 
 const queries: string[] = ["bitcoin", "ethereum", "dogecoin", "cryptocurrency"];
 
@@ -30,7 +30,7 @@ for await (const req of s) {
           const sentimentResponse = await request({
             url: 'https://api.api-ninjas.com/v1/sentiment?text=' + text,
             headers: {
-              'X-Api-Key': 'ntIoZJEEGOoyl7acMjSOWw==okm6h0OFxx4NaICp', // Replace with your API key
+              'X-Api-Key': 'api-key', 
             },
           });
 
